@@ -30,6 +30,38 @@ function App() {
                     </ProtectedRoute>
                   } 
                 />
+                <Route 
+                  path="/dashboard/schedule" 
+                  element={
+                    <ProtectedRoute>
+                      <Dashboard />
+                    </ProtectedRoute>
+                  } 
+                />
+                <Route 
+                  path="/dashboard/courses" 
+                  element={
+                    <ProtectedRoute>
+                      <Dashboard />
+                    </ProtectedRoute>
+                  } 
+                />
+                <Route 
+                  path="/dashboard/attendance" 
+                  element={
+                    <ProtectedRoute>
+                      <Dashboard />
+                    </ProtectedRoute>
+                  } 
+                />
+                <Route 
+                  path="/dashboard/profile" 
+                  element={
+                    <ProtectedRoute>
+                      <Dashboard />
+                    </ProtectedRoute>
+                  } 
+                />
                 <Route path="*" element={<Navigate to="/" replace />} />
               </Routes>
             </div>
